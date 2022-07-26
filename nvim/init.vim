@@ -12,6 +12,7 @@ call plug#begin()
     Plug 'hrsh7th/cmp-cmdline'
     Plug 'L3MON4D3/LuaSnip'
     Plug 'saadparwaiz1/cmp_luasnip'
+    Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 call plug#end()
 
 lua require("hggmarks")
