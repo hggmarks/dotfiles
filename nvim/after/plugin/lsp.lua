@@ -3,10 +3,11 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
+  'pyright',
   'tsserver',
   'eslint',
-  'sumneko_lua',
   'rust_analyzer',
+  'als',
 })
 
 -- Fix Undefined global 'vim'
@@ -15,6 +16,18 @@ lsp.configure('sumneko_lua', {
         Lua = {
             diagnostics = {
                 globals = { 'vim' }
+            }
+        }
+    }
+})
+
+lsp.configure('pyright', {
+    settings = {
+        python = {
+            analysis = {
+                autoSearchPaths = true,
+                diagnosticMode = "workspace",
+                useLibraryCodeForTypes = true
             }
         }
     }

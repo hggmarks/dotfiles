@@ -17,11 +17,10 @@ return require('packer').startup(function(use)
     use ( 'nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use ( 'nvim-treesitter/playground' )
     use ( 'theprimeagen/harpoon' )
-    use ( 'mbbill/undotree' )	
+    use ( 'mbbill/undotree' )
     use ( 'tpope/vim-fugitive' )
 
-    -- Colorschemes
-    use { "catppuccin/nvim", as = "catppuccin" } 
+    use { "catppuccin/nvim", as = "catppuccin" }
 
     use {
 	    'VonHeikemen/lsp-zero.nvim',
@@ -44,6 +43,18 @@ return require('packer').startup(function(use)
 		    -- Snippet Collection (Optional)
 		    {'rafamadriz/friendly-snippets'},
 	    }
+
+
+    }
+
+    use {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v2.x",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+        }
     }
 end)
 
