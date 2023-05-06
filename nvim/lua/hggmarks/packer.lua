@@ -56,6 +56,10 @@ return require('packer').startup(function(use)
             "MunifTanjim/nui.nvim",
         }
     }
+
+    use {
+        "christoomey/vim-tmux-navigator"
+    }
 end)
 
 
