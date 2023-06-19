@@ -3,7 +3,10 @@ My config/dotfiles for nvim and other nerd terminal (TUI) things
 
 # How to setup
 
-## Powershell 7 (Windows)
+
+## Windows
+
+### Powershell 7
 
 Install some [Nerdfont](https://github.com/ryanoasis/nerd-fonts) (i like Hack Nerd Font)
 
@@ -46,3 +49,8 @@ Copy the powershell directory to .config
 Go to your `$Home/Documents/Powershell/Microsoft.Powershell_profile.ps1` and add the following line at the top
 
     . $env:USERPROFILE\.config\powershell\user_profile.ps1
+
+
+### LunarVim
+
+All you need to do is copy the `lvim/config.lua` file to your `$env:LOCALAPPDATA/lvim` directory
