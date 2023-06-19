@@ -203,3 +203,7 @@ lvim.builtin.treesitter.highlight.enable = true
 -- PERSONAL MAPPINGS
 
 lvim.keys.normal_mode["<leader>pv"] = vim.cmd.Ex
+
+-- PERSONAL CONFIGS
+
+lvim.transparent_window = true
