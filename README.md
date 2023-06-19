@@ -22,7 +22,7 @@ In windows terminal settings:
 
     Install-Module posh-git -Scope CurrentUser -Force
 
-    Install-Module oh-my-posh -Scope CurrentUser -Force
+    winget install JanDeDobbeleer.OhMyPosh -s winget
 
 **Install Terminal Icons**
 
