@@ -31,6 +31,10 @@ In windows terminal settings:
 
     Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 
+**Install Z Directory Jumper**
+
+    Install-Module -Name z -Force
+
 **Install PSReadLine**
 
     Install-Module -Name PSReadLine -AllowClobber -Force
